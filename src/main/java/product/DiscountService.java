@@ -26,7 +26,8 @@ public class DiscountService implements DiscountStrategy {
     }
 
     public void printDiscount(Product product, DiscountType discountType) {
-        System.out.println("Christmas discount for " + product.getName() + " is: " + product.getDiscount());
+        System.out.println( discountType.toString() + " discount for " + product.getName() +
+                " with price " + product.getCost() + " is: " + product.getDiscount());
     }
 
 
